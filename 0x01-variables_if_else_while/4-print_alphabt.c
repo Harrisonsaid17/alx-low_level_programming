@@ -1,23 +1,22 @@
 #include <stdio.h>
-#include <stdlid.h>
-#include <string.h>
+#include <unistd.h>
 /**
  * main -entry point
  * Description: print lowercase alphabets
- *
  * Return: always 0 (success)
  */
 int main(void)
 {
-	int i;
-
-	for (i = 97; i < 123; i++)
+	char ch;
+	
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		if (ch != 'e' && ch != 'q')
+	{
+		putchar(ch);
 	}
+	}
+	
 	putchar('\n');
 	return (0);
 }
